@@ -1,0 +1,44 @@
+# Arquivos de compilação e execução
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# Arquivos de projeto NetBeans
+.nb-gradle/
+.nb-gradle-private/
+.gradle/
+nbproject/private/
+
+# Arquivos de configuração NetBeans
+nbproject/Makefile-*.mk
+nbproject/Package-*.bash
+nbproject/build-impl.xml
+
+# Outros arquivos e diretórios gerados
+*.log
+*.bak
+*.swp
+*~
+._*
+*~
+.project
+.classpath
+.settings/
+*.iml
+.idea/
+
+# Dependências Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+
+# Arquivos de compilação Maven
+build/
+target/
