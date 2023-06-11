@@ -1,0 +1,87 @@
+CREATE TABLE adm_mercado (
+	id SERIAL PRIMARY KEY,
+	nome varchar(100) not null,
+	usuario VARCHAR(256) NOT null,
+	senha VARCHAR(20) NOT null
+);
+
+
+CREATE TABLE Item (
+	id SERIAL PRIMARY KEY,
+	descricao VARCHAR(500) NOT null,
+	foto VARCHAR(100) NOT null
+);
+
+CREATE TABLE promocao (
+	id SERIAL PRIMARY KEY,
+	validade date,
+	mercado int8,
+	foreign key (mercado) references adm_mercado (id)
+);
+
+CREATE TABLE promo_item (
+	id SERIAL PRIMARY KEY,
+	valor_antigo decimal not null,
+	Valor_desconto decimal not null,
+	item int8,
+	promocao int8,
+	foreign key (item) references item (id),
+	foreign key (promocao) references promocao (id)
+);
+
+alter table promo_item add column valor_antigo decimal not null default(0)
+alter table promo_item add column valor_desconto decimal not null default(0)
+
+INSERT into adm_mercado (nome, usuario,senha) values 
+	('Joao Feijão', 'joao.feijao@gmail.com', '12345'),
+	('Carrefour', 'carrefour@gmail.com', '12346'),
+	('União', 'uniao@gmail.com', '12347'),
+	('Tudo Barato', 'tudobarato@gmail.com', '12348'),
+	('Correto', 'Correto@gmail.com', '12349'),
+	('Tauste', 'Tauste@gmail.com', '12344');
+
+INSERT into item (descricao, foto) values 
+	('Maçã gala de R$5,00 por 3,50 o kg', 'C:\Users\janai\Desktop\janaineM\FACENS\3° Semestre\UPX\apple.png'),
+	('Arroz Broto legal 5 kg de R$ 23,50 por 20,00', 'C:\Users\janai\Desktop\janaineM\FACENS\3° Semestre\UPX\arroz.png'),
+	('Banana nanica R$ 2,50 o kg', 'C:\Users\janai\Desktop\janaineM\FACENS\3° Semestre\UPX\banana.png'),
+	('Cup Noodles R$ 4,50 unidade', 'C:\Users\janai\Desktop\janaineM\FACENS\3° Semestre\UPX\banana.png'),
+	('detergente de R$ 2,99 po 2,00', 'C:\Users\janai\Desktop\janaineM\FACENS\3° Semestre\UPX\detergente.png'),
+	('Leite Piracanjuba de R$ 5,00 po 4,49', 'C:\Users\janai\Desktop\janaineM\FACENS\3° Semestre\UPX\milke.png');
+
+insert into promocao (validade, mercado) values
+	('20/05/2023', 1),
+	('21/05/2023', 2),
+	('20/05/2023', 3),
+	('22/05/2023', 4),
+	('20/05/2023', 5),
+	('23/05/2023', 6);
+
+insert into promo_item  (item, promocao) values
+	(6, 1),
+	(5, 2),
+	(4, 3),
+	(3, 4),
+	(2, 5),
+	(1, 6);
+
+
+select nome
+from adm_mercado 
+
+select descricao
+from item
+where id = 5;
+
+select *
+from adm_mercado am 
+where nome like 'C%'
+
+select valor_desconto
+from promo_item
+where valor_desconto < 5
+order by valor_desconto asc;
+
+select valor_desconto
+from promo_item
+where valor_desconto < 5
+order by valor_desconto desc;
