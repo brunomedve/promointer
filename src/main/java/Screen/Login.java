@@ -133,7 +133,7 @@ public class Login extends javax.swing.JFrame {
             String nome = txtEmail.getText();
             String senha = txtSenha.getText();
             Statement statement = this.connection.createStatement();
-            String sql = "SELECT * FROM public.adm_mercado a where a.usuario='" + nome + "' and a.senha='" + senha + "'";
+            String sql = "SELECT * FROM public.cliente a where a.usuario='" + nome + "' and a.senha='" + senha + "'";
             
             ResultSet resultSet = statement.executeQuery(sql);
             if(resultSet.next()){
