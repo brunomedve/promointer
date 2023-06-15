@@ -5,8 +5,7 @@
 package Screen;
 
 import Aplication.ModeloTelaPrincipal;
-
-
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -35,6 +34,7 @@ public class CadastroOferta extends javax.swing.JFrame {
         txtCupom = new javax.swing.JTextField();
         txtInformacaoAdicional = new javax.swing.JTextField();
         btnEnviarOferta = new javax.swing.JButton();
+        btnVoltar = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -49,7 +49,7 @@ public class CadastroOferta extends javax.swing.JFrame {
                 txtTituloOfertaActionPerformed(evt);
             }
         });
-        getContentPane().add(txtTituloOferta, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 190, 510, 50));
+        getContentPane().add(txtTituloOferta, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 180, 500, 50));
 
         txtPreço.setBackground(new java.awt.Color(68, 68, 68));
         txtPreço.setFont(new java.awt.Font("Nirmala UI", 1, 24)); // NOI18N
@@ -60,7 +60,7 @@ public class CadastroOferta extends javax.swing.JFrame {
                 txtPreçoActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPreço, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 530, 420, 50));
+        getContentPane().add(txtPreço, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 520, 410, 50));
 
         txtCupom.setBackground(new java.awt.Color(68, 68, 68));
         txtCupom.setFont(new java.awt.Font("Nirmala UI", 1, 24)); // NOI18N
@@ -71,7 +71,7 @@ public class CadastroOferta extends javax.swing.JFrame {
                 txtCupomActionPerformed(evt);
             }
         });
-        getContentPane().add(txtCupom, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 650, 420, 50));
+        getContentPane().add(txtCupom, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 640, 410, 50));
 
         txtInformacaoAdicional.setBackground(new java.awt.Color(68, 68, 68));
         txtInformacaoAdicional.setFont(new java.awt.Font("Nirmala UI", 1, 18)); // NOI18N
@@ -83,7 +83,7 @@ public class CadastroOferta extends javax.swing.JFrame {
                 txtInformacaoAdicionalActionPerformed(evt);
             }
         });
-        getContentPane().add(txtInformacaoAdicional, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 760, 500, 120));
+        getContentPane().add(txtInformacaoAdicional, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 760, 490, 100));
 
         btnEnviarOferta.setContentAreaFilled(false);
         btnEnviarOferta.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -92,11 +92,20 @@ public class CadastroOferta extends javax.swing.JFrame {
                 btnEnviarOfertaActionPerformed(evt);
             }
         });
-        getContentPane().add(btnEnviarOferta, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 910, 180, 50));
+        getContentPane().add(btnEnviarOferta, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 900, 180, 50));
+
+        btnVoltar.setContentAreaFilled(false);
+        btnVoltar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnVoltar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVoltarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnVoltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 910, 60, 50));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Cadastro de oferta.png"))); // NOI18N
         jLabel1.setText("jLabel1");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1490, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1490, 980));
 
         pack();
         setLocationRelativeTo(null);
@@ -119,13 +128,23 @@ public class CadastroOferta extends javax.swing.JFrame {
     }//GEN-LAST:event_txtInformacaoAdicionalActionPerformed
 
     private void btnEnviarOfertaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnviarOfertaActionPerformed
-      ModeloTelaPrincipal model = new ModeloTelaPrincipal();
-      model.setTituloOferta(txtTituloOferta.getText());
-      Principal pcp = new Principal();
-      pcp.recebeTituloOferta(model);
-      pcp.setVisible(true);
-      this.setVisible(false);
+        if (!txtTituloOferta.getText().isEmpty() && !txtPreço.getText().isEmpty()) {
+            ModeloTelaPrincipal model = new ModeloTelaPrincipal();
+            model.setTituloOferta(txtTituloOferta.getText());
+            Principal pcp = new Principal();
+            pcp.recebeTituloOferta(model);
+            pcp.setVisible(true);
+            this.setVisible(false);
+        } else {
+            JOptionPane.showMessageDialog(rootPane, "Cadastro Incompleto");
+        }
     }//GEN-LAST:event_btnEnviarOfertaActionPerformed
+
+    private void btnVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVoltarActionPerformed
+        Principal pcp = new Principal();
+        pcp.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnVoltarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -164,6 +183,7 @@ public class CadastroOferta extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnEnviarOferta;
+    private javax.swing.JButton btnVoltar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JTextField txtCupom;
     private javax.swing.JTextField txtInformacaoAdicional;

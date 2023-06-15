@@ -18,9 +18,9 @@ public class Principal extends javax.swing.JFrame {
     public Principal() {
         initComponents();
     }
-
+    
     public void recebeTituloOferta(ModeloTelaPrincipal model) {
-
+        
         lbbloco1.setText(model.getTituloOferta());
     }
 
@@ -34,7 +34,39 @@ public class Principal extends javax.swing.JFrame {
     private void initComponents() {
 
         btnSugerirOferta = new javax.swing.JButton();
-        lbbloco1 = new javax.swing.JLabel();
+        btnSair = new javax.swing.JButton();
+        btnBloco2 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        lbbloco1 = new javax.swing.JTextArea();
+        btnBloco3 = new javax.swing.JButton();
+        jTextField2 = new javax.swing.JTextField();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        lbbloco2 = new javax.swing.JTextArea();
+        btnBloco4 = new javax.swing.JButton();
+        jTextField3 = new javax.swing.JTextField();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        lbbloco3 = new javax.swing.JTextArea();
+        btnBloco1 = new javax.swing.JButton();
+        jTextField4 = new javax.swing.JTextField();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        lbbloco4 = new javax.swing.JTextArea();
+        btnBloco5 = new javax.swing.JButton();
+        jTextField5 = new javax.swing.JTextField();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        lbbloco5 = new javax.swing.JTextArea();
+        btnBloco6 = new javax.swing.JButton();
+        jTextField6 = new javax.swing.JTextField();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        lbbloco6 = new javax.swing.JTextArea();
+        btnBloco7 = new javax.swing.JButton();
+        jTextField7 = new javax.swing.JTextField();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        lbbloco7 = new javax.swing.JTextArea();
+        btnBloco8 = new javax.swing.JButton();
+        jTextField8 = new javax.swing.JTextField();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        lbbloco8 = new javax.swing.JTextArea();
         lbBackground = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -49,15 +81,320 @@ public class Principal extends javax.swing.JFrame {
         });
         getContentPane().add(btnSugerirOferta, new org.netbeans.lib.awtextra.AbsoluteConstraints(1370, 70, 190, 40));
 
-        lbbloco1.setFont(new java.awt.Font("Nirmala UI", 1, 18)); // NOI18N
-        lbbloco1.setLabelFor(lbbloco1);
-        lbbloco1.setText("uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu");
-        lbbloco1.setToolTipText("");
-        lbbloco1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        lbbloco1.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        getContentPane().add(lbbloco1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 240, 140, 110));
+        btnSair.setContentAreaFilled(false);
+        btnSair.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSairActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnSair, new org.netbeans.lib.awtextra.AbsoluteConstraints(1470, 940, 80, 40));
 
-        lbBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/PromoInter - Principal.png"))); // NOI18N
+        btnBloco2.setContentAreaFilled(false);
+        btnBloco2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnBloco2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBloco2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnBloco2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 280, 350, 120));
+
+        jTextField1.setBackground(new java.awt.Color(0, 0, 0));
+        jTextField1.setFont(new java.awt.Font("Nirmala UI", 1, 20)); // NOI18N
+        jTextField1.setForeground(new java.awt.Color(255, 189, 89));
+        jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField1.setText("R$ 3,99");
+        jTextField1.setBorder(null);
+        jTextField1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 350, 110, 40));
+
+        jScrollPane1.setBorder(null);
+
+        lbbloco1.setEditable(false);
+        lbbloco1.setFont(new java.awt.Font("Nirmala UI", 1, 18)); // NOI18N
+        lbbloco1.setForeground(new java.awt.Color(102, 102, 102));
+        lbbloco1.setTabSize(1);
+        lbbloco1.setText("  Leite Uht Parmalat\n     Integral pet 1L");
+        lbbloco1.setToolTipText("");
+        lbbloco1.setAutoscrolls(false);
+        lbbloco1.setBorder(null);
+        lbbloco1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jScrollPane1.setViewportView(lbbloco1);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 280, 200, 80));
+
+        btnBloco3.setContentAreaFilled(false);
+        btnBloco3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnBloco3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBloco3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnBloco3, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 280, 350, 120));
+
+        jTextField2.setBackground(new java.awt.Color(0, 0, 0));
+        jTextField2.setFont(new java.awt.Font("Nirmala UI", 1, 20)); // NOI18N
+        jTextField2.setForeground(new java.awt.Color(255, 189, 89));
+        jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField2.setText("R$ 2,75");
+        jTextField2.setBorder(null);
+        jTextField2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 350, 110, 40));
+
+        jScrollPane2.setBorder(null);
+
+        lbbloco2.setEditable(false);
+        lbbloco2.setFont(new java.awt.Font("Nirmala UI", 1, 18)); // NOI18N
+        lbbloco2.setForeground(new java.awt.Color(102, 102, 102));
+        lbbloco2.setTabSize(1);
+        lbbloco2.setText("  Bolacha Recheada \n Trakinas chocolate");
+        lbbloco2.setToolTipText("");
+        lbbloco2.setAutoscrolls(false);
+        lbbloco2.setBorder(null);
+        lbbloco2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jScrollPane2.setViewportView(lbbloco2);
+
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 280, 190, 80));
+
+        btnBloco4.setContentAreaFilled(false);
+        btnBloco4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnBloco4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBloco4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnBloco4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 280, 350, 120));
+
+        jTextField3.setBackground(new java.awt.Color(0, 0, 0));
+        jTextField3.setFont(new java.awt.Font("Nirmala UI", 1, 20)); // NOI18N
+        jTextField3.setForeground(new java.awt.Color(255, 189, 89));
+        jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField3.setText("R$ 10,00");
+        jTextField3.setBorder(null);
+        jTextField3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1390, 350, 110, 40));
+
+        jScrollPane3.setBorder(null);
+
+        lbbloco3.setEditable(false);
+        lbbloco3.setFont(new java.awt.Font("Nirmala UI", 1, 18)); // NOI18N
+        lbbloco3.setForeground(new java.awt.Color(102, 102, 102));
+        lbbloco3.setTabSize(1);
+        lbbloco3.setText("     Champoo Dove\nRecostrução Completa");
+        lbbloco3.setToolTipText("");
+        lbbloco3.setAutoscrolls(false);
+        lbbloco3.setBorder(null);
+        lbbloco3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jScrollPane3.setViewportView(lbbloco3);
+
+        getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 280, 200, 80));
+
+        btnBloco1.setContentAreaFilled(false);
+        btnBloco1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnBloco1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBloco1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnBloco1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 350, 120));
+
+        jTextField4.setBackground(new java.awt.Color(0, 0, 0));
+        jTextField4.setFont(new java.awt.Font("Nirmala UI", 1, 20)); // NOI18N
+        jTextField4.setForeground(new java.awt.Color(255, 189, 89));
+        jTextField4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField4.setText("R$ 7,49");
+        jTextField4.setBorder(null);
+        jTextField4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 350, 110, 40));
+
+        jScrollPane4.setBorder(null);
+
+        lbbloco4.setEditable(false);
+        lbbloco4.setFont(new java.awt.Font("Nirmala UI", 1, 18)); // NOI18N
+        lbbloco4.setForeground(new java.awt.Color(102, 102, 102));
+        lbbloco4.setTabSize(1);
+        lbbloco4.setText("   Arroz Tio João Tipo1\n      Parbolizado 1kg\n");
+        lbbloco4.setToolTipText("");
+        lbbloco4.setAutoscrolls(false);
+        lbbloco4.setBorder(null);
+        lbbloco4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jScrollPane4.setViewportView(lbbloco4);
+
+        getContentPane().add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 280, 200, 80));
+
+        btnBloco5.setContentAreaFilled(false);
+        btnBloco5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnBloco5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBloco5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnBloco5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 720, 350, 120));
+
+        jTextField5.setBackground(new java.awt.Color(0, 0, 0));
+        jTextField5.setFont(new java.awt.Font("Nirmala UI", 1, 20)); // NOI18N
+        jTextField5.setForeground(new java.awt.Color(255, 189, 89));
+        jTextField5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField5.setText("R$ 6,19");
+        jTextField5.setBorder(null);
+        jTextField5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 790, 110, 40));
+
+        jScrollPane5.setBorder(null);
+
+        lbbloco5.setEditable(false);
+        lbbloco5.setFont(new java.awt.Font("Nirmala UI", 1, 18)); // NOI18N
+        lbbloco5.setForeground(new java.awt.Color(102, 102, 102));
+        lbbloco5.setTabSize(1);
+        lbbloco5.setText("Oleo de Soja Lisa\n         900ML");
+        lbbloco5.setToolTipText("");
+        lbbloco5.setAutoscrolls(false);
+        lbbloco5.setBorder(null);
+        lbbloco5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jScrollPane5.setViewportView(lbbloco5);
+
+        getContentPane().add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 720, 170, 80));
+
+        btnBloco6.setContentAreaFilled(false);
+        btnBloco6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnBloco6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBloco6ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnBloco6, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 720, 350, 120));
+
+        jTextField6.setBackground(new java.awt.Color(0, 0, 0));
+        jTextField6.setFont(new java.awt.Font("Nirmala UI", 1, 20)); // NOI18N
+        jTextField6.setForeground(new java.awt.Color(255, 189, 89));
+        jTextField6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField6.setText("R$ 7,90");
+        jTextField6.setBorder(null);
+        jTextField6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField6ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 790, 110, 40));
+
+        jScrollPane6.setBorder(null);
+
+        lbbloco6.setEditable(false);
+        lbbloco6.setFont(new java.awt.Font("Nirmala UI", 1, 18)); // NOI18N
+        lbbloco6.setForeground(new java.awt.Color(102, 102, 102));
+        lbbloco6.setTabSize(1);
+        lbbloco6.setText("Creme dental Colgate\n    Luminous White ");
+        lbbloco6.setToolTipText("");
+        lbbloco6.setAutoscrolls(false);
+        lbbloco6.setBorder(null);
+        lbbloco6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jScrollPane6.setViewportView(lbbloco6);
+
+        getContentPane().add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 720, 190, 80));
+
+        btnBloco7.setContentAreaFilled(false);
+        btnBloco7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnBloco7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBloco7ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnBloco7, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 720, 360, 120));
+
+        jTextField7.setBackground(new java.awt.Color(0, 0, 0));
+        jTextField7.setFont(new java.awt.Font("Nirmala UI", 1, 20)); // NOI18N
+        jTextField7.setForeground(new java.awt.Color(255, 189, 89));
+        jTextField7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField7.setText("R$ 28,99");
+        jTextField7.setBorder(null);
+        jTextField7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField7ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 790, 110, 40));
+
+        jScrollPane7.setBorder(null);
+
+        lbbloco7.setEditable(false);
+        lbbloco7.setFont(new java.awt.Font("Nirmala UI", 1, 18)); // NOI18N
+        lbbloco7.setForeground(new java.awt.Color(102, 102, 102));
+        lbbloco7.setTabSize(1);
+        lbbloco7.setText("  Aparelho de barbear\nGillete Mach3 sensitive");
+        lbbloco7.setToolTipText("");
+        lbbloco7.setAutoscrolls(false);
+        lbbloco7.setBorder(null);
+        lbbloco7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jScrollPane7.setViewportView(lbbloco7);
+
+        getContentPane().add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 720, 200, 80));
+
+        btnBloco8.setContentAreaFilled(false);
+        btnBloco8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnBloco8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBloco8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnBloco8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 720, 350, 120));
+
+        jTextField8.setBackground(new java.awt.Color(0, 0, 0));
+        jTextField8.setFont(new java.awt.Font("Nirmala UI", 1, 20)); // NOI18N
+        jTextField8.setForeground(new java.awt.Color(255, 189, 89));
+        jTextField8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField8.setText("R$ 19,48");
+        jTextField8.setBorder(null);
+        jTextField8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1400, 790, 110, 40));
+
+        jScrollPane8.setBorder(null);
+
+        lbbloco8.setEditable(false);
+        lbbloco8.setFont(new java.awt.Font("Nirmala UI", 1, 18)); // NOI18N
+        lbbloco8.setForeground(new java.awt.Color(102, 102, 102));
+        lbbloco8.setTabSize(1);
+        lbbloco8.setText("Linguiça Suína toscana \n      Perdigão 1kg");
+        lbbloco8.setToolTipText("");
+        lbbloco8.setAutoscrolls(false);
+        lbbloco8.setBorder(null);
+        lbbloco8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jScrollPane8.setViewportView(lbbloco8);
+
+        getContentPane().add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1350, 720, 200, 80));
+
+        lbBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Principal 2.png"))); // NOI18N
         lbBackground.setText("jLabel1");
         getContentPane().add(lbBackground, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1580, 1000));
 
@@ -70,6 +407,92 @@ public class Principal extends javax.swing.JFrame {
         telaCadastroOferta.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnSugerirOfertaActionPerformed
+
+    private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed
+        Login telaDeLogin = new Login();
+        telaDeLogin.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnSairActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
+
+    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField5ActionPerformed
+
+    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField6ActionPerformed
+
+    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField7ActionPerformed
+
+    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField8ActionPerformed
+
+    private void btnBloco1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBloco1ActionPerformed
+        TelaBloco1 view1 = new TelaBloco1();
+        view1.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnBloco1ActionPerformed
+
+    private void btnBloco2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBloco2ActionPerformed
+        TelaBloco2 view2 = new TelaBloco2();
+        view2.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnBloco2ActionPerformed
+
+    private void btnBloco3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBloco3ActionPerformed
+        TelaBloco3 view3 = new TelaBloco3();
+        view3.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnBloco3ActionPerformed
+
+    private void btnBloco4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBloco4ActionPerformed
+    TelaBloco4 view4 = new TelaBloco4();
+        view4.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnBloco4ActionPerformed
+
+    private void btnBloco5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBloco5ActionPerformed
+        TelaBloco5 view5 = new TelaBloco5();
+        view5.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnBloco5ActionPerformed
+
+    private void btnBloco6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBloco6ActionPerformed
+        TelaBloco6 view6 = new TelaBloco6();
+        view6.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnBloco6ActionPerformed
+
+    private void btnBloco7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBloco7ActionPerformed
+        TelaBloco7 view7 = new TelaBloco7();
+        view7.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnBloco7ActionPerformed
+
+    private void btnBloco8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBloco8ActionPerformed
+        TelaBloco8 view8 = new TelaBloco8();
+        view8.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnBloco8ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -107,8 +530,40 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBloco1;
+    private javax.swing.JButton btnBloco2;
+    private javax.swing.JButton btnBloco3;
+    private javax.swing.JButton btnBloco4;
+    private javax.swing.JButton btnBloco5;
+    private javax.swing.JButton btnBloco6;
+    private javax.swing.JButton btnBloco7;
+    private javax.swing.JButton btnBloco8;
+    private javax.swing.JButton btnSair;
     private javax.swing.JButton btnSugerirOferta;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
     private javax.swing.JLabel lbBackground;
-    private javax.swing.JLabel lbbloco1;
+    private javax.swing.JTextArea lbbloco1;
+    private javax.swing.JTextArea lbbloco2;
+    private javax.swing.JTextArea lbbloco3;
+    private javax.swing.JTextArea lbbloco4;
+    private javax.swing.JTextArea lbbloco5;
+    private javax.swing.JTextArea lbbloco6;
+    private javax.swing.JTextArea lbbloco7;
+    private javax.swing.JTextArea lbbloco8;
     // End of variables declaration//GEN-END:variables
 }

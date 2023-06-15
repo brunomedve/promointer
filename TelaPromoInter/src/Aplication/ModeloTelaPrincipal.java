@@ -4,12 +4,14 @@
  */
 package Aplication;
 
+import java.net.URI;
+
 /**
  *
  * @author bruno
  */
 public class ModeloTelaPrincipal {
-    
+
     private String tituloOferta;
 
     public String getTituloOferta() {
@@ -19,6 +21,5 @@ public class ModeloTelaPrincipal {
     public void setTituloOferta(String tituloOferta) {
         this.tituloOferta = tituloOferta;
     }
-    
-    
+
 }

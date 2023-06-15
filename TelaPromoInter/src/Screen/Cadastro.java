@@ -128,7 +128,7 @@ public class Cadastro extends javax.swing.JFrame {
             this.setVisible(false);
 
         } else {
-            JOptionPane.showMessageDialog(rootPane, "Cadastro incompleto");
+            JOptionPane.showMessageDialog(rootPane, "Cadastro Incompleto");
         }
 
 
